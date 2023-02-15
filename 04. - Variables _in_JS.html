@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in JS</title>
+</head>
+<body>
+    <p> Variable are basically storage containers for data in your code. 
+        Until recently there was only one way to create a variable in JavaScript — the var statement. 
+        But in the newest JavaScript versions we have two more ways — 
+        
+        
+        1. let  
+        2. const
+    </p>
+    <script>
+        
+        // 1. let
+        let JavaScript;
+        JavaScript = 'Best Programming Language';
+
+        console.log(JavaScript)
+
+        alert(JavaScript);
+        // Alert is used to display a pop on the page. It is also used in a respective function.
+        
+        // We can also use declare multiple variables in one line.
+
+        let C = 'Structure Programming', Java = 'Obj. Orient. Programming';
+
+        
+        // var instead of let - In older scripts, you may also find another keyword: var instead of let.
+        
+        // copy data from one into the other.
+        
+        let A = 'Alphabet', B;
+
+        B = A;
+
+        console.log(B)
+
+        // Now B will display A's Data ()
+
+        // To change the  data of variable
+
+        let message;
+        message = 'Hello!';
+        message = 'World!'; // value changed
+        console.log (message)
+
+        // A variable should be declared only once.
+        // Repeated declaration of the same variable is an error.
+        
+
+    </script>
+
+    <script>
+        // 2. const (Constant)
+        // To declare a constant (unchanging) variable, use const instead of let:
+        // Repeated declaration of the same variable is an error:
+        
+        const MyBirthday = '30.07.2001';
+
+        // We can not reassign a value to const.
+
+        const MyBirthday = '23.05.2002';
+
+        // It will give a error like, - error, can't reassign the constant!
+
+        
+
+
+
+
+    </script>
+
+</body>
+</html>
