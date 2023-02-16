@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion in JS</title>
+</head>
+<body>
+    <h4>
+    Type Conversion - 
+    Most of the time, operators and functions automatically convert the values given to them to the right type.
+    There are also cases when we need to explicitly convert a value to the expected type.
+ 
+</h4>
+<script>
+       
+       // String Conversion
+       let value = true;
+       alert(typeof value); // boolean
+       value = String(value); // now value is a string "true"
+       alert(typeof value); // string
+
+       // Number Conversion
+       let str = "123";
+       alert(typeof str); // string
+       let num = Number(str); // becomes a number 123
+       alert(typeof num); // number
+
+       //Boolean Conversion
+       alert( Boolean(1) );         // true
+       alert( Boolean(0) );        // false
+       alert( Boolean("hello") ); // true
+       alert( Boolean("") );     // false
+
+       
+
+
+</script>
+</body>
+</html>

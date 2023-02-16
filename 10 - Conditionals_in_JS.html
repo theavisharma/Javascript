@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals in JS</title>
+</head>
+<body>
+    <p>
+        <h3>
+        The “if” statement
+        The if(...) statement evaluates a condition in parentheses and, if the result is true, executes a block of code.
+        
+        The "else" statement
+        else is to specify a block of code to be executed, if the same condition is false.
+
+        "else if" statement
+        is to specify a new condition to test, if the first condition is false.
+
+        "switch" statement 
+        is to specify many alternative blocks of code to be executed.
+       </h3>
+        
+
+    </p>
+
+    <script>
+        // If statement
+        let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+        if (year == 2015) {
+           alert( 'You are right' ); 
+        }
+        // If we want to execute more than one statement, we have to wrap our code block inside curly braces:
+        if (year == 2015) {
+           alert( 'You are so smart' );
+        }
+        
+        
+        // else statement
+        let date = prompt('The date on which ECMAScript-2015 specification published?', '');
+        if (date == 30) {
+           alert( 'You are so right' );
+         }
+        else 
+        {
+            alert('You are wrong')
+        }
+
+        // else if statement
+        if (time < 10) {
+        greeting = "Good morning";
+        } else if (time < 20) {
+        greeting = "Good day";
+        } else {
+        greeting = "Good evening";
+        }
+          
+        // Switch statement
+        //The getDay() method returns the weekday as a number between 0 and 6.
+        switch (new Date().getDay())   {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+         break;
+        case 6:
+          day = "Saturday";
+}
+
+        
+    </script>
+    
+</body>
+</html>
