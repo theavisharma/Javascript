@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators in JS
+    </title>
+</head>
+<body>
+    <h3>
+        There are four logical operators in JavaScript:
+         || (OR)                 - finds the first trusty value.
+         && (AND)                - finds the first false value.
+         ! (NOT)                 - Converts the operand to boolean type: true/false.
+         ?? (Nullish Coalescing) - ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.
+    </h3>
+
+    <script>
+        
+        // OR operator
+        let hour = 12;
+        let isWeekend = true;
+        if (hour < 10 || hour > 18 || isWeekend) {
+        alert( 'The office is closed.' ); // it is the weekend
+}
+
+        // AND operator
+        let hour = 12;
+        let minute = 30;
+        if (hour == 12 && minute == 30) {
+            alert( 'The time is 12:30' );
+
+        // NOT operator
+        alert( !true ); // false
+        alert( !0 ); // true   
+}
+
+       // Nullish coalescing operator '??'
+       let user;
+       alert(user ?? "Anonymous"); // Anonymous (user is undefined)
+
+    </script>
+</body>
+</html>

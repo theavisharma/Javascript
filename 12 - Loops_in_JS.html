@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <h3>
+        Loops - are a way to repeat the same code multiple times. <br>
+
+        Types of Loops -    <br> 
+        1. While
+        2. do While
+        3. for loop
+    </h3>
+    <p>
+    <script>
+        // While Loops
+        let i = 0;
+        while (i < 3) { // shows 0, then 1, then 2
+        console.log( i );
+        i++; 
+        
+          // Notes:
+         // i-- if we use i-- then it goes like 2, 1, then O. (Descending order)
+        // Curly braces are not required for a single-line body. 
+        
+      }
+        // do While loops
+        let i = 0;
+        do {
+        alert( i );
+        i++;
+      } while (i < 3);
+        
+        // for loops
+        for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+        alert(i);
+}
+       // Breaking the loops
+       let sum = 0;
+       while (true) {
+       let value = +prompt("Enter a number", '');
+       if (!value) break; // (*)
+       sum += value;
+}
+       alert( 'Sum: ' + sum );
+
+       //Continue the loops
+       
+       for (let i = 0; i < 10; i++) {
+       // if true, skip the remaining part of the body
+       if (i % 2 == 0) continue;
+       alert(i); // 1, then 3, 5, 7, 9
+
+       // Lables for Break and Continue
+       /* The labeled statement can be used with break or continue statements. 
+          It is prefixing a statement with an identifier which you can refer to. */
+
+          let str = '';
+          loop1:
+          for (let i = 0; i < 5; i++) {
+             if (i === 1) {
+             continue loop1;
+         }
+           str = str + i;
+        }
+           console.log(str);
+// Expected output: "0234"
+}
+
+    </script>
+    </p>
+</body>
+</html>

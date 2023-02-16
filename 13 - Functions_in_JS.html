@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+
+    <h3> Function Declaration -   <br>
+         <p>If the user have to create a function then , they have to must declare it and 
+         write its functionalities.</p>
+
+         Function Calling - <br>
+         <p>User have to call the function to use it.</p>
+
+         Local Variable - <br>
+         <p> Variable which is declared inside the function is known as local Variable. It is only used inside function.</p>
+
+         Outer Variable - <br>
+         <p> Variable which is declared outside the function is known as outer Variable. It is also used outside the function. </p>
+         
+         Parameters - <br>
+         <p> Function parameters are listed inside the parentheses () in the function definition. <br>
+             Function arguments are the values received by the function when it is invoked. <br>
+             Inside the function, the arguments (the parameters) behave as local variables. <br> </p>
+        </h3>
+    <script>
+        // Function Declaration
+         function showMessage() {
+         alert( 'Hello everyone!' );  
+      }
+       // Function calling
+         showMessage(); // by typing this function name - it will display internal message "Hello Everyone!"
+
+      // Local Variables
+       function showContent() {
+       let message = "Hello, I'm JavaScript!"; // local variable
+       alert( message );
+}
+      showContent(); // Hello, I'm JavaScript!
+      alert( message ); // <-- Error! The variable is local to the function.
+
+      // Outer Variables 
+      let userName = 'John';
+      function showMessage() {
+      let message = 'Hello, ' + userName;
+      alert(message);
+}
+      showMessage(); // Hello, John
+       
+      // Parameters - 
+      function myFunction(p1, p2) {
+      return p1 * p2;   // when code reaches return statement then it breaks the execution of code.
+}
+     // FunctioN Expression - 
+     function sayHi() {   // (1) create
+     alert( "Hello" );
+}
+     let func = sayHi;    // (2) copy
+     func(); // Hello     // (3) run the copy (it works)!
+     sayHi(); // Hello    //     this still works too (why wouldn't it)
+    </script>
+
+    <h3>
+      
+</body>
+</html>
