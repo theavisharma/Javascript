@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods in JS</title>
+</head>
+<body>
+     
+     <script>
+
+// 1.charAt(index) - Returns the character at the specified index. 
+var str = "Hello";
+console.log(str.charAt(0)); // Output: "H"
+
+// 2.concat(str1, str2, ...) - Combines two or more strings and returns a new string.
+var str1 = "Hello";
+var str2 = " World";
+console.log(str1.concat(str2)); // Output: "Hello World".
+
+// 3.replace(searchValue, replaceValue) - Searches a string for a specified value or regular expression and replaces it with another value.
+var str = "Hello World";
+console.log(str.replace("World", "Universe")); // Output: "Hello Universe"
+
+// 4.toUpperCase() and toLowerCase() toUpperCase() converts a string to uppercase. & toLowerCase() converts a string to lowercase.
+var str = "Hello World";
+console.log(str.toUpperCase()); // Output: "HELLO WORLD"
+console.log(str.toLowerCase()); // Output: "hello world"
+
+// 5.substring(start, end) and substr(start, length) -  
+
+//substring() is similar to slice(), but it doesn't support negative indices.
+
+//substr() extracts a specified number of characters from a string, starting at a specified index.
+
+var abc = "Hello World";
+console.log(abc.substring(6, 11)); // Output: "World"
+console.log(abc.substr(6, 5)); // Output: "World"
+
+// 6.trim() - Removes whitespace from both ends of a string.
+
+var str = "   Hello World   ";
+console.log(str.trim()); // Output: "Hello World"
+
+// 7. indexOf(substring) and lastIndexOf(substring)
+
+    // indexOf() returns the index of the first occurrence of a substring in a string.
+    // lastIndexOf() returns the index of the last occurrence of a substring in a string.
+
+var str = "Hello World";
+console.log(str.indexOf("o")); // Output: 4
+console.log(str.lastIndexOf("o")); // Output: 7
+
+
+    </script>
+</body>
+</html>
