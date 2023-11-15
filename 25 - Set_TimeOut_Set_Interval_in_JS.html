@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval function in JS</title>
+</head>
+<body>
+    <Script>
+
+        // setTimeout Function
+
+        console.log("Hello Everyone");
+
+        setTimeout(()=> {
+
+                console.log("5 Sec are over");
+        },5000 ); // 5000 are miliseconds (5 milisec = 5 sec.)
+
+        console.log("Done"); // this statement will be executed before timeout function.
+
+
+      // setInterval Function 
+
+        let id = setInterval(()=>  {   // id is given for multiple setInterval functions for unique indentification.
+
+                console.log("I will repeat every two seconds.");
+
+        },2000);
+
+        console.log(id);
+
+
+
+
+    </Script>
+</body>
+</html>

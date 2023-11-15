@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this with arrow function </title>
+</head>
+<body>
+
+    <script> 
+    let student = {
+
+        name : "Avinash",
+        marks : 95,
+        rollno : 21,
+
+        getName : function () {
+            console.log(this);
+            return this.marks;    
+
+        },
+
+        getMarks :() => {
+
+            console.log(this);
+            return this.rollno;
+        },
+
+    };
+      
+</script>
+</body>
+</html>

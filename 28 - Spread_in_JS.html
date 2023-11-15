@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread in JS</title>
+</head>
+<body>
+    <script>
+
+
+            // Spread is used to separate elements like arrays, strings, number and objects.
+
+            // Spread with arrays 
+
+            let arr = [1,2,3,4,5,6,7,8,9,10];
+            console.log(...arr);   // Syntax =>  Eg : ...name
+
+
+            // Spread with strings
+
+            let programming = [..."Javascript is best language"];
+            console.log(programming);
+
+
+            // Spread with Objects 
+
+            const data = {
+                name: "Avi",
+                class: 12,
+                rollno: 21
+            }
+
+
+            // storing data into another object after spread =
+           
+            const datacopy = {...data, id : 8177}; // we can also add element with spreading
+
+
+    </script>
+</body>
+</html>
