@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding elements on page in JS.</title>
+
+</head>
+<body>
+    <div id="container">
+        <!-- Prepend Function-->
+        <p>This is existing content.</p>
+      </div>
+
+
+      <div id="div-01">Here is div-01</div> <!--RemoveFunction-->
+        <div id="div-02">Here is div-02</div>
+            <div id="div-03">Here is div-03</div>
+
+
+
+            <div id="parent"> <!--Remove Child-->
+                <div id="child"></div>
+              </div>
+              
+
+    
+</body>
+
+<script>
+
+
+// AppendChild 
+let paragraph = document.createElement("p"); // It is used to create element on page.
+paragraph.innerHTML = "This line is added by Javascript";
+
+let body = document.querySelector("body");
+body.appendChild(paragraph); // Append child is used for adding new element on the page like in body or any div.
+
+
+// Append
+
+let div = document.createElement("div");
+let p = document.createElement("p");
+div.append(p);
+console.log(div.childNodes); // NodeList [ <p> ]
+
+
+
+
+// Prepend Function
+
+ var newParagraph = document.createElement('p');
+ newParagraph.textContent = 'This is new content.';
+
+ var container = document.getElementById('container');
+ container.prepend(newParagraph);
+
+
+                
+ // remove Function 
+
+ const element = document.getElementById("div-02");
+ element.remove(); // Removes the div with the 'div-02' id
+
+ 
+// removeChild Function
+ 
+const parent = document.getElementById("parent");
+const child = document.getElementById("child");
+const throwawayNode = parent.removeChild(child);
+
+
+
+
+
+</script>
+
+</html>

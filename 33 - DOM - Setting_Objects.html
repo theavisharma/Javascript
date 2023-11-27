@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Setting Objects</title>
+</head>
+<body>
+    <h1> Three things to remember : </h1>
+
+    <p> 1.innerText - It shows full text as display on screen.</p>
+
+    <p> 2.textContent  - It shows all the full text written as backend as code. </p>
+
+    <p> 2.innerHTML  - It display all the markups.</p>
+
+</body>
+
+
+<script>
+
+let heading = document.querySelector('h1');
+heading.innerText="Three main things :"; // It changes the inner text.
+
+let paragraph = document.querySelector('p');
+paragraph.innerHTML=`<b>${paragraph.innerText} </b>`;  // it bolds the first element of P.
+
+
+
+
+</script>
+
+
+
+
+</html>

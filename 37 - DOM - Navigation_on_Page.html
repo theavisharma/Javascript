@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvaigation on Page</title>
+</head>
+<body>
+    
+    <div class="paragraph">
+
+        <p>Java is more popoluar than Javascript.</p>
+        <p>Javascript is more popoluar than PHP. </p>
+
+    </div>
+
+
+    <script>
+       
+       let p = document.querySelector('p');
+        
+        p.parentElement; // To check parent element of child property. // Result = paragraph
+
+      
+
+        let paragraph = document.querySelector('.paragraph');
+        paragraph.children; // To check children of parent property. // Result = [p,p]
+        paragraph.childElementCount; // Result = 2
+
+        
+
+    </script>
+
+</body>
+</html>

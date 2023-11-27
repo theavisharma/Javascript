@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList property in JS
+    </title>
+</head>
+<style>
+    .heading {
+        color: blue;
+    }
+</style>
+<body>
+    
+    <div class="heading">
+
+        <h3>Class List Property</h3>
+
+        <p>classList.add  -     To add new classes  </p>
+        <p>classList.remove - To remove a class.</p>
+        <p>classList.contains - To check if class exists or not.</p>
+        <p>classList.toggle - It check if a class exits then it will remove that otherwise not exist it will add that class.</p>
+
+
+    </div>
+
+
+    <script>
+
+        let heading = document.querySelector('h3');
+
+        heading.classList;  // To check the class list.
+        
+        heading.classList.add("new");  //  To add new class.
+
+        heading.classList.add("old");  //  To add new class.
+
+        heading.classList.remove("old")  // To remove a class.
+
+        heading.classList.contains("old"); // To check if class exists or not (Returns true or false).
+
+        heading.classList.toggle("Result"); // It will add result class if it is not there.
+        
+
+
+
+    </script>
+
+
+</body>
+</html>
